@@ -1,7 +1,7 @@
 package oop1;
 
 public class MusicPlayer {
-
+    // 일단 전부 인스턴스 변수, 메서드로
     int volume = 0;
     boolean isOn = false;
 
