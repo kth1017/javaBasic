@@ -14,6 +14,7 @@ public class DataCountMain3 {
 
         //추가
         //인스턴스를 통한 접근
+        //클래스 파일을 보면 알겠지만 컴파일시 자체적으로 static으로 이동 & 비권장
         Data3 data4 = new Data3("D");
         System.out.println(data4.count);
 
