@@ -1,5 +1,7 @@
 package poly.ex3;
 
+import poly.ex2.Animal;
+
 public class AbstractMain {
 
     public static void main(String[] args) {
@@ -13,6 +15,11 @@ public class AbstractMain {
 
         cat.sound();
         cat.move();
+
+        // 메서드가 아닌 필드값은 참조타입을 따라감
+        A cat1 = new Cat();
+        System.out.println(cat1.a);
+        ((AbstractAnimal) cat1).sound();
 
         soundAnimal(dog);
         soundAnimal(cat);

@@ -1,6 +1,8 @@
 package poly.ex3;
 
-public abstract class AbstractAnimal {
+public abstract class AbstractAnimal extends A{
+
+    int a = 10;
 
     public abstract void sound();
 

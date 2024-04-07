@@ -15,6 +15,7 @@ public class CastingMain6 {
     private static void call(Parent parent) {
         parent.parentMethod();
         //Child 인스턴스인 경우 childMethod() 실행
+        // 아래는 자바 16부터 추가
         if (parent instanceof Child child) {
             System.out.println("Child 인스턴스 맞음");
             child.childMethod();
