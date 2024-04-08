@@ -1,24 +1,25 @@
 package poly.ex.pay0;
 
+import java.util.Scanner;
+
 public class PayMain0 {
 
     public static void main(String[] args) {
         PayService payService = new PayService();
 
-        //kakao 결제
-        String payOption1 = "kakao";
-        int amount1 = 5000;
-        payService.processPay(payOption1, amount1);
+        Scanner scanner = new Scanner(System.in);
 
-        //naver 결제
-        String payOption2 = "naver";
-        int amount2 = 10000;
-        payService.processPay(payOption2, amount2);
+        while (true) {
+            System.out.println("결제수단 입력");
+            String option = scanner.nextLine();
 
-        //잘못된 결제 수단 선택
-        String payOption3 = "bad";
-        int amount3 = 15000;
-        payService.processPay(payOption3, amount3);
+            System.out.println("결제금액 입력");
+            int amount = scanner.nextInt();
+            scanner.nextLine();
+
+            payService.processPay(option, amount);
+        }
+
 
     }
 
