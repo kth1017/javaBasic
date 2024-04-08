@@ -18,7 +18,9 @@ public class AbstractMain {
 
         // 메서드가 아닌 필드값은 참조타입을 따라감
         A cat1 = new Cat();
-        System.out.println(cat1.a);
+        System.out.println(cat1.a); // 1
+        System.out.println(cat.a); // 100
+        System.out.println(duck.a); // 10
         ((AbstractAnimal) cat1).sound();
 
         soundAnimal(dog);

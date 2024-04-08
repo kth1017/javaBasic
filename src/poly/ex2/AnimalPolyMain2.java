@@ -8,6 +8,7 @@ public class AnimalPolyMain2 {
         Caw caw = new Caw();
         Duck duck = new Duck();
         Animal[] animalArr = {dog, cat, caw, duck};
+
         
         // 참조값 대입도 다형성이 적용됨
         dogInAnimal(dog);

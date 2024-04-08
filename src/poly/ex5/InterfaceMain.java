@@ -5,7 +5,8 @@ public class InterfaceMain {
     public static void main(String[] args) {
         //인터페이스 생성 불가
         //InterfaceAnimal interfaceAnimal = new InterfaceAnimal();
-
+        //단, 아래처럼 상수의 경우는 사용가능(static)
+        int a = InterfaceAnimal.A;
         Cat cat = new Cat();
         Dog dog = new Dog();
         Caw caw = new Caw();
